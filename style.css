@@ -1,0 +1,146 @@
+  body {
+    color: #333;
+    font: 1.2rem / 1.2 Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-top: 100px;
+  }
+
+/* 下面是用 grid 进行布局。 */
+
+  main {
+    border-top: gray solid 2px;
+    margin-top: 5rem;
+    padding-top: 5rem;
+  }
+  
+  @media screen and (min-width: 800px) {
+
+    .imgtext {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  
+    .saltimg {
+      flex: 1 400px;
+    }
+  
+    .action {
+      flex: 1 500px;
+    }
+  }
+  
+  /* 图片边框和阴影 */  
+  .imgtext img {
+    border-radius: 15px;
+    box-shadow: gray 3px 3px ;
+    border: 3px solid pink;
+  }
+
+  figcaption {
+    text-align: center;
+    line-height: 1.7rem;
+  }
+
+  .text {
+    margin: 3rem;
+    line-height: 2rem;
+  }
+
+/* 按钮的样式 */
+
+  button {
+      background-color: #6666ff;
+      border-radius: 20px;
+      border: dotted solid gray;
+      box-shadow: 3px 3px gray;
+      margin: 60px auto;
+      display: block;
+  }
+
+  button a{
+      color: #fff;
+      font-weight: bolder;
+      display: block;
+      width: 300px;
+      height: 70px;
+      text-decoration: none;
+      font-size: 2.5em;
+      line-height: 1.5em;
+      padding-left: 9px;
+  }
+
+  /* 字体样式 */
+
+  h1 {
+    text-align: center;
+    color: #6666ff;
+  }
+
+  .action p {
+    color: #6666ff;
+    line-height: 1rem;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+
+  footer {
+    margin: 9rem 3rem 2rem;
+    border-top: gray solid 2px;
+    
+  }
+  /* 所有链接的样式定义 */
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: silver;
+  }
+
+  a:link {
+    color: red;
+  }
+
+  a:hover {
+    color: gold;
+  }
+  
+  
+
+
+
+
+
+  /* 
+  曾经犯的错误
+  1. 这个布局，很乱，后来，我用简单的代码，实现了这一长串的指令。
+  header {
+    display: flex;
+    flex: wrap row;
+    border: 2px solid black;
+  }
+  header div:first-of-type {
+    border: 2px solid black;
+  }
+
+  section:nth-of-type(1) {
+    display: flex;
+    border: 2px solid black;
+  }
+  section:nth-of-type(2) {
+    padding: 40px;
+  }
+
+  footer {
+    border: 2px solid black;
+    padding: 20px 40px;
+  }
+*/
