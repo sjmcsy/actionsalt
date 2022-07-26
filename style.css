@@ -70,10 +70,8 @@
       display: block;
       width: 300px;
       height: 70px;
-      text-decoration: none;
       font-size: 2.5em;
-      line-height: 1.5em;
-      padding-left: 9px;
+      line-height: 2em;
   }
 
   /* 字体样式 */
@@ -109,34 +107,3 @@
     color: gold;
   }
   
-  
-
-
-
-
-
-  /* 
-  曾经犯的错误
-  1. 这个布局，很乱，后来，我用简单的代码，实现了这一长串的指令。
-  header {
-    display: flex;
-    flex: wrap row;
-    border: 2px solid black;
-  }
-  header div:first-of-type {
-    border: 2px solid black;
-  }
-
-  section:nth-of-type(1) {
-    display: flex;
-    border: 2px solid black;
-  }
-  section:nth-of-type(2) {
-    padding: 40px;
-  }
-
-  footer {
-    border: 2px solid black;
-    padding: 20px 40px;
-  }
-*/
